@@ -34,7 +34,8 @@
 body.suit_form_submit_on_right .col-right {
   .submit-row {
     @include media-breakpoint-up(lg) {
-      position: relative;
+      position: sticky;
+      top: 2rem;
       padding: $grid-gutter-width-base/2;
       background-color: $form-bg;
       display: flex;
