@@ -29,6 +29,7 @@ urlpatterns = [
     re_path(r'^admin/custom/$', views.custom_admin_view),
 
     re_path(r'^admin/', admin.site.urls),
+    re_path(r'^suit/', include('suit.urls')),
 
     # Django-Select2
     re_path(r'^select2/', include('django_select2.urls')),

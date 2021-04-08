@@ -40,8 +40,10 @@ SASS compiling is done in ``nodejs`` using ``gulp`` tasks and ``node-sass`` (use
 
 .. code-block:: bash
 
-    # Install dependencies
-    npm install
+    # Install dependencies (from package-lock.json)
+    npm ci
+
+    # If you want install with update run command npm install
 
     # Run Django Suit demo app
     python demo/manage.py runserver 0.0.0.0:8000

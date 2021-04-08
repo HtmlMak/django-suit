@@ -45,7 +45,7 @@ class CountryForm(ModelForm):
                 prepend='fa-users',
                 append='Search',
                 onclick_append="window.open(\'https://www.google.com/\')",
-                append_class='addon', attrs={'placeholder': 'Human population' }),
+                append_class='addon', attrs={'placeholder': 'Human population'}),
             'description': AutosizedTextarea,
             'architecture': AutosizedTextarea,
         }
@@ -274,6 +274,9 @@ class ShowcaseAdmin(RelatedFieldAdmin):
         ('Foreign key relations',
          {'description': 'Original select and linked select feature',
           'fields': ['link_to_country', 'country', 'country2', 'raw_id_field']}),
+        ('Stream blocks',
+         {'description': '',
+          'fields': ['stream']}),
 
         # ('Date and time', {
         #     'description': 'Improved date/time widgets (SuitDateWidget, '

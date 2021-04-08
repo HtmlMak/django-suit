@@ -11,4 +11,3 @@ docs/_build/
 /node_modules/
 /env/
 /venv/
-/package-lock.json
