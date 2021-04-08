@@ -1,0 +1,376 @@
+/* Block content */
+/* add new block */
+/* Help text */
+/* Handle */
+/* for django skin */
+.streamfield_app {
+  max-width  : 758px;
+  width      : 98%;
+  margin-top : 5px;
+
+  textarea {
+    display : none;
+  }
+
+  p {
+    margin-bottom : 0.5em;
+  }
+
+  a.grp-change-related {
+    background-image : none;
+  }
+
+  a.grp-add-another {
+    background-image : none;
+  }
+
+  .stream-model-block {
+    position      : relative;
+    background    : white;
+    margin-bottom : 20px;
+    box-shadow    : 0 0 5px 2px rgba(0, 0, 0, 0.1);
+
+    .streamblock__block__title {
+      position : relative;
+
+      span {
+        font-weight : bold;
+        margin-left : 0;
+        font-size   : 1.1rem;
+      }
+    }
+
+    .stream-model-block__content {
+      padding    : 20px;
+      background : #f5f5f5;
+
+      img {
+        border : 1px solid #b6b6b6;
+      }
+    }
+  }
+
+  .stream-block__options {
+    padding    : 10px;
+    text-align : right;
+    background : #efefef;
+  }
+
+  .stream-block__option {
+    display     : inline-block;
+    margin-left : 10px;
+
+    span {
+      margin : 0 0 0 5px;
+
+      + {
+        * {
+          margin : 0 0 0 3px;
+        }
+      }
+    }
+  }
+
+  .stream-model-block__content {
+    .model-field-content {
+      &:after {
+        content    : ".";
+        display    : block;
+        height     : 0;
+        clear      : both;
+        visibility : hidden;
+      }
+    }
+  }
+
+  .block-fields__label {
+    font-style : italic;
+    color      : #999;
+    display    : block;
+  }
+
+  .block-fields {
+    > div {
+      margin-bottom : 0.4em;
+    }
+
+    h2 {
+      padding          : 0;
+      text-shadow      : none;
+      border           : none;
+      background-image : none;
+      font-size        : 1.3em;
+    }
+
+    h3 {
+      padding          : 0;
+      text-shadow      : none;
+      border           : none;
+      background-image : none;
+      font-size        : 1.1em;
+      margin-bottom    : 0.5em;
+    }
+
+    h4 {
+      font-weight : bold;
+    }
+
+    blockquote {
+      font-size     : 1.1em;
+      font-style    : italic;
+      font-weight   : bold;
+      margin-bottom : 0.4em;
+    }
+
+    table {
+      td {
+        border-bottom : 1px solid #CCC;
+      }
+
+      th {
+        border-bottom : 1px solid #CCC;
+      }
+    }
+
+    ul {
+      li {
+        margin-left : 20px;
+        list-style  : disc;
+      }
+    }
+
+    ol {
+      li {
+        margin-left : 20px;
+        list-style  : decimal;
+      }
+    }
+
+    b {
+      font-weight : bold;
+    }
+
+    svg {
+      max-width  : 150px;
+      max-height : 150px;
+    }
+
+    img {
+      max-width  : 150px;
+      max-height : 150px;
+    }
+  }
+
+  .stream-model-subblock {
+    background    : #e0e7eb;
+    padding       : 10px;
+    display       : block;
+    border-radius : 5px;
+    margin-bottom : 10px;
+    position      : relative;
+  }
+
+  .stream-model-block__content.no-subblocks {
+    padding : 20px 28px;
+  }
+
+  .stream-btn {
+    background    : #78adbf;
+    color         : white !important;
+    padding       : 3px 7px;
+    display       : inline-block;
+    border-radius : 2px;
+    margin-top    : 5px;
+    font-weight   : bold;
+    user-select   : none;
+
+    &:hover {
+      background : #309bbf;
+    }
+  }
+
+  .add-another {
+    margin-left : 10px;
+  }
+
+  .stream-model-block__content.abstract-block {
+    a {
+      img {
+        border : 3px solid #a6d1e0;
+      }
+
+      &:hover {
+        img {
+          border-color : #78adbf;
+        }
+      }
+    }
+  }
+
+  .stream-insert-new-block {
+    text-align : right;
+
+    li {
+      list-style : none;
+    }
+  }
+
+  .add-new-block-button {
+    padding         : 5px;
+    font-weight     : bold;
+    text-decoration : underline;
+    cursor          : pointer;
+    color           : #309bbf;
+    user-select     : none;
+  }
+}
+
+.stream-help-text {
+  margin-bottom : 10px;
+
+  .stream-help-text__title {
+    padding         : 5px;
+    text-align      : right;
+    font-weight     : bold;
+    text-decoration : underline;
+    cursor          : pointer;
+  }
+
+  .stream-help-text__content {
+    padding       : 10px;
+    background    : #d4e6d7;
+    font-size     : 15px;
+    line-height   : 1.2em;
+    border-radius : 5px;
+
+    ul {
+      li {
+        list-style : disc;
+        margin     : .5em 20px;
+      }
+    }
+  }
+}
+
+.streamblock__block-handle {
+  position : absolute;
+  right    : 2px;
+  top      : 1px;
+
+  .block-move {
+    position            : relative;
+    width               : 24px;
+    height              : 24px;
+    background-image    : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAACvBAMAAAAVlgMGAAAAGFBMVEUAAABCQkIwnL+/MDBBQUFDQ0Mwm7+/MDC6BnJcAAAABXRSTlMAn5+foPEIPbMAAACVSURBVEjH7ZQxCgIxEEV/dhHbNPbBYuvtvIAH0MILbGEteH+QGUKegTRbZsmr8nnDn1SjA3KKUnjkEJ7SJcqxl+WiTBSFIDDWKKCapYO+Oa/S/Mlh/kq3VY69LBdloigEgbFGAdUsHXRIiDvPRs3dyeHlVH7v4QpRg16YkmDZhNiWhEgT6p+rk8PbUQMKqGZp/Z0j8gNoghnFfJszcgAAAABJRU5ErkJggg==');
+    background-repeat   : no-repeat;
+    display             : block;
+    margin-left         : 0;
+    float               : left;
+    cursor              : pointer;
+    background-position : 0 -97px;
+
+    &:hover {
+      background-position : 0 -141px;
+    }
+  }
+
+  .block-delete {
+    position            : relative;
+    width               : 24px;
+    height              : 24px;
+    background-image    : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAACvBAMAAAAVlgMGAAAAGFBMVEUAAABCQkIwnL+/MDBBQUFDQ0Mwm7+/MDC6BnJcAAAABXRSTlMAn5+foPEIPbMAAACVSURBVEjH7ZQxCgIxEEV/dhHbNPbBYuvtvIAH0MILbGEteH+QGUKegTRbZsmr8nnDn1SjA3KKUnjkEJ7SJcqxl+WiTBSFIDDWKKCapYO+Oa/S/Mlh/kq3VY69LBdloigEgbFGAdUsHXRIiDvPRs3dyeHlVH7v4QpRg16YkmDZhNiWhEgT6p+rk8PbUQMKqGZp/Z0j8gNoghnFfJszcgAAAABJRU5ErkJggg==');
+    background-repeat   : no-repeat;
+    display             : block;
+    margin-left         : 0;
+    float               : left;
+    cursor              : pointer;
+    background-position : 0 -9px;
+
+    &:hover {
+      background-position : 0 -53px;
+    }
+  }
+}
+
+.stream-model-subblock-handle {
+  position : absolute;
+  right    : 2px;
+  top      : 1px;
+}
+
+.stream-model-subblock {
+  .subblock-move {
+    position            : relative;
+    width               : 24px;
+    height              : 24px;
+    background-image    : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAACvBAMAAAAVlgMGAAAAGFBMVEUAAABCQkIwnL+/MDBBQUFDQ0Mwm7+/MDC6BnJcAAAABXRSTlMAn5+foPEIPbMAAACVSURBVEjH7ZQxCgIxEEV/dhHbNPbBYuvtvIAH0MILbGEteH+QGUKegTRbZsmr8nnDn1SjA3KKUnjkEJ7SJcqxl+WiTBSFIDDWKKCapYO+Oa/S/Mlh/kq3VY69LBdloigEgbFGAdUsHXRIiDvPRs3dyeHlVH7v4QpRg16YkmDZhNiWhEgT6p+rk8PbUQMKqGZp/Z0j8gNoghnFfJszcgAAAABJRU5ErkJggg==');
+    background-repeat   : no-repeat;
+    display             : block;
+    margin-left         : 0;
+    float               : left;
+    cursor              : pointer;
+    background-position : 0 -97px;
+
+    &:hover {
+      background-position : 0 -141px;
+    }
+  }
+
+  .subblock-delete {
+    position            : relative;
+    width               : 24px;
+    height              : 24px;
+    background-image    : url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAACvBAMAAAAVlgMGAAAAGFBMVEUAAABCQkIwnL+/MDBBQUFDQ0Mwm7+/MDC6BnJcAAAABXRSTlMAn5+foPEIPbMAAACVSURBVEjH7ZQxCgIxEEV/dhHbNPbBYuvtvIAH0MILbGEteH+QGUKegTRbZsmr8nnDn1SjA3KKUnjkEJ7SJcqxl+WiTBSFIDDWKKCapYO+Oa/S/Mlh/kq3VY69LBdloigEgbFGAdUsHXRIiDvPRs3dyeHlVH7v4QpRg16YkmDZhNiWhEgT6p+rk8PbUQMKqGZp/Z0j8gNoghnFfJszcgAAAABJRU5ErkJggg==');
+    background-repeat   : no-repeat;
+    display             : block;
+    margin-left         : 0;
+    float               : left;
+    cursor              : pointer;
+    background-position : 0 -9px;
+
+    &:hover {
+      background-position : 0 -53px;
+    }
+  }
+}
+
+[v-cloak] {
+  display : none;
+}
+
+#content-main {
+  .streamfield_app {
+    .stream-model-block {
+      .streamblock__block__title {
+        background  : #a9c8d5;
+        color       : black;
+        margin      : 0;
+        padding     : 0 10px;
+        line-height : 32px;
+        font-weight : normal;
+      }
+    }
+
+    .stream-insert-new-block {
+      font-size : 15px;
+    }
+
+    .stream-btn {
+      font-weight : normal;
+    }
+
+    .stream-help-text {
+      ul {
+        margin-left : 0;
+      }
+    }
+  }
+
+  .streamblock__block-handle {
+    top : 4px;
+  }
+
+  .stream-model-subblock-handle {
+    top : 4px;
+  }
+}

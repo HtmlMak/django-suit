@@ -1,4 +1,5 @@
 from django.db import models
+from suit.fields import StreamField
 
 TYPE_CHOICES = ((1, 'Awesome'), (2, 'Good'), (3, 'Normal'), (4, 'Bad'))
 TYPE_CHOICES2 = ((1, 'Hot'), (2, 'Normal'), (3, 'Cold'))
@@ -51,6 +52,26 @@ class City(models.Model):
         unique_together = ('name', 'country')
 
 
+class RichText(models.Model):
+    text = models.TextField(blank=True, null=True)
+
+    options = {
+        "gray_bgr": {
+            "label": "Block on gray background",
+            "type": "checkbox",
+            "default": False
+        }
+    }
+
+    class Meta:
+        verbose_name = "Text"
+
+
+STREAMBLOCKS_MODELS = [
+    RichText,
+]
+
+
 class Showcase(models.Model):
     name = models.CharField(max_length=64)
     help_text = models.CharField(max_length=64,
@@ -83,13 +104,22 @@ class Showcase(models.Model):
         choices=TYPE_CHOICES3, default=3, help_text="Help text")
 
     country = models.ForeignKey(Country, null=True, blank=True, on_delete=models.SET_NULL)
-    country2 = models.ForeignKey(Country, null=True, blank=True, related_name='showcase_country2_set', verbose_name='Django Select 2', on_delete=models.SET_NULL)
-    raw_id_field = models.ForeignKey(Country, null=True, blank=True, related_name='showcase_raw_set', on_delete=models.SET_NULL)
+    country2 = models.ForeignKey(Country, null=True, blank=True, related_name='showcase_country2_set',
+                                 verbose_name='Django Select 2', on_delete=models.SET_NULL)
+    raw_id_field = models.ForeignKey(Country, null=True, blank=True, related_name='showcase_raw_set',
+                                     on_delete=models.SET_NULL)
     # linked_foreign_key = models.ForeignKey(Country, limit_choices_to={
     #     'continent__name': 'Europe'}, related_name='foreign_key_linked')
     html5_color = models.CharField(null=True, blank=True, max_length=7)
     html5_number = models.IntegerField(null=True, blank=True)
     html5_date = models.DateField(null=True, blank=True)
+
+    stream = StreamField(
+        model_list=[
+            RichText
+        ],
+        verbose_name="Content blocks (based on streamfield)"
+    )
 
     class Meta:
         verbose_name_plural = 'Showcase'
@@ -124,7 +154,6 @@ class Book(models.Model):
 
     def __unicode__(self):
         return self.title
-
 
 # class LargeFilterHorizontal(models.Model):
 #     title = models.CharField(max_length=64)

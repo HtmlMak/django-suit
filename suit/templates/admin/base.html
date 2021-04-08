@@ -2,9 +2,13 @@
 {% load i18n static suit_tags %}
 
 {% block stylesheet %}{% static "suit/css/suit.css" %}{% endblock %}
-
+{% block extrahead %}
+    <script src="{% static "suit/vendor/js/vue.js" %}"></script>
+    {{ block.super }}
+{% endblock %}
 {% block extrastyle %}
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet'
+          type='text/css'>
     <link href='{% static "suit/css/font-awesome.min.css" %}' rel='stylesheet' type='text/css'>
 {% endblock %}
 
@@ -27,8 +31,8 @@
         {% for message in messages %}
             <div class="alert alert-{% firstof message.tags 'info' %} alert-dismissible fade show" role="alert">
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 {% if 'safe' in message.tags %}{{ message|safe }}{% else %}{{ message }}{% endif %}
             </div>
         {% endfor %}
@@ -49,25 +53,29 @@
             </span>
             {% endblock %}
             <div class="user-links">
-            {% block userlinks %}
-                {% if site_url %}
-                    <a href="{{ site_url }}" class="icon-link view-site-link" data-title="{% trans 'View site' %}">{% trans 'View site' %}</a>
-                    <span class="separator">/</span>
+                {% block userlinks %}
+                    {% if site_url %}
+                        <a href="{{ site_url }}" class="icon-link view-site-link"
+                           data-title="{% trans 'View site' %}">{% trans 'View site' %}</a>
+                        <span class="separator">/</span>
 
-                {% endif %}
-                {% if user.is_active and user.is_staff %}
-                    {% url 'django-admindocs-docroot' as docsroot %}
-                    {% if docsroot %}
-                        <a href="{{ docsroot }}" class="icon-link documentation-link" data-title="{% trans 'Documentation' %}">{% trans 'Documentation' %}</a>
+                    {% endif %}
+                    {% if user.is_active and user.is_staff %}
+                        {% url 'django-admindocs-docroot' as docsroot %}
+                        {% if docsroot %}
+                            <a href="{{ docsroot }}" class="icon-link documentation-link"
+                               data-title="{% trans 'Documentation' %}">{% trans 'Documentation' %}</a>
+                            <span class="separator">/</span>
+                        {% endif %}
+                    {% endif %}
+                    {% if user.has_usable_password %}
+                        <a href="{% url 'admin:password_change' %}" class="icon-link change-password-link"
+                           data-title="{% trans 'Change password' %}">{% trans 'Change password' %}</a>
                         <span class="separator">/</span>
                     {% endif %}
-                {% endif %}
-                {% if user.has_usable_password %}
-                    <a href="{% url 'admin:password_change' %}" class="icon-link change-password-link" data-title="{% trans 'Change password' %}">{% trans 'Change password' %}</a>
-                    <span class="separator">/</span>
-                {% endif %}
-                <a href="{% url 'admin:logout' %}" class="icon-link logout-link" data-title="{% trans 'Log out' %}">{% trans 'Log out' %}</a>
-            {% endblock %}
+                    <a href="{% url 'admin:logout' %}" class="icon-link logout-link"
+                       data-title="{% trans 'Log out' %}">{% trans 'Log out' %}</a>
+                {% endblock %}
             </div>
         </div>
     {% endif %}
@@ -78,7 +86,7 @@
 {% endblock %}
 
 {% block footer %}
-{#    </div> <!-- Put footer outside #container -->#}
+    {#    </div> <!-- Put footer outside #container -->#}
     {% if not is_popup %}
         <div id="footer">
         <footer class="footer">
@@ -123,7 +131,7 @@
         </footer>
     {% endif %}
 
-{#    {{ block.super }}#}
+    {#    {{ block.super }}#}
     <script src="{% static "suit/js/suit.js" %}"></script>
     {% if cl.formset or action_form and 'toggle_changelist_top_actions'|suit_conf:request %}
         <script type="text/javascript">
@@ -144,13 +152,13 @@
                 });
             {% endif %}
 
-{#            {% if 'layout'|suit_conf:request.current_app == 'vertical' %}#}
-{#                Suit.$('#content').prepend(Suit.$('.breadcrumbs'));#}
-{#            {% endif %}#}
+            {#            {% if 'layout'|suit_conf:request.current_app == 'vertical' %}#}
+            {#                Suit.$('#content').prepend(Suit.$('.breadcrumbs'));#}
+            {#            {% endif %}#}
         </script>
     {% endif %}
 
-{#    <div> <!-- Fix/close div previously closed by footer -->#}
+    {#    <div> <!-- Fix/close div previously closed by footer -->#}
 {% endblock %}
 
 <!-- This is a solution to remove the sidebar that is not compatible with django-suit. -->
