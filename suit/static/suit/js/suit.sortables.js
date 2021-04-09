@@ -137,11 +137,10 @@
         // Update input count right before submit
         if ($inputs && $inputs.length) {
             var $last_input = $inputs.last();
-            var selector = $(this).selector;
             $($last_input[0].form).submit(function (e) {
                 var i = 0, value;
                 // e.preventDefault();
-                $(selector).each(function () {
+                $(this).find('.suit-sortable').each(function () {
                     var $input = $(this);
                     var fieldset_id = $input.attr('name').split(/-\d+-/)[0];
                     // Check if any of new dynamic block values has been added
