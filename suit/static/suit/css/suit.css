@@ -3056,7 +3056,7 @@ fieldset input[type=number], fieldset input[type=date], fieldset input.vIntegerF
 
 .timezonewarning { display: inline-block; margin-top: .5rem; }
 
-.related-lookup:before { display: inline-block; width: 20px; height: 20px; font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; content: ""; color: #212529; font-size: 1.143rem; margin-left: 5px; }
+.related-lookup:before { display: inline-block; width: 20px; height: 20px; font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; content: ""; color: #212529; font-size: 1.143rem; margin-left: 5px; }
 
 .autosize { max-height: 12rem; }
 
@@ -3078,7 +3078,7 @@ fieldset input[type=number], fieldset input[type=date], fieldset input.vIntegerF
 
 .widget-AdminSplitDateTime .datetimeshortcuts a[id^='calendarlink']:hover, .widget-AdminSplitDateTime .datetimeshortcuts a[id^='calendarlink']:focus, .widget-AdminSplitDateTime .datetimeshortcuts a[id^='clocklink']:hover, .widget-AdminSplitDateTime .datetimeshortcuts a[id^='clocklink']:focus, .widget-AdminDateWidget .datetimeshortcuts a[id^='calendarlink']:hover, .widget-AdminDateWidget .datetimeshortcuts a[id^='calendarlink']:focus, .widget-AdminDateWidget .datetimeshortcuts a[id^='clocklink']:hover, .widget-AdminDateWidget .datetimeshortcuts a[id^='clocklink']:focus, .widget-AdminTimeWidget .datetimeshortcuts a[id^='calendarlink']:hover, .widget-AdminTimeWidget .datetimeshortcuts a[id^='calendarlink']:focus, .widget-AdminTimeWidget .datetimeshortcuts a[id^='clocklink']:hover, .widget-AdminTimeWidget .datetimeshortcuts a[id^='clocklink']:focus { text-decoration: none; color: #0d64a2; }
 
-.widget-AdminSplitDateTime .datetimeshortcuts a[id^='calendarlink'] .date-icon, .widget-AdminSplitDateTime .datetimeshortcuts a[id^='calendarlink'] .clock-icon, .widget-AdminSplitDateTime .datetimeshortcuts a[id^='clocklink'] .date-icon, .widget-AdminSplitDateTime .datetimeshortcuts a[id^='clocklink'] .clock-icon, .widget-AdminDateWidget .datetimeshortcuts a[id^='calendarlink'] .date-icon, .widget-AdminDateWidget .datetimeshortcuts a[id^='calendarlink'] .clock-icon, .widget-AdminDateWidget .datetimeshortcuts a[id^='clocklink'] .date-icon, .widget-AdminDateWidget .datetimeshortcuts a[id^='clocklink'] .clock-icon, .widget-AdminTimeWidget .datetimeshortcuts a[id^='calendarlink'] .date-icon, .widget-AdminTimeWidget .datetimeshortcuts a[id^='calendarlink'] .clock-icon, .widget-AdminTimeWidget .datetimeshortcuts a[id^='clocklink'] .date-icon, .widget-AdminTimeWidget .datetimeshortcuts a[id^='clocklink'] .clock-icon { font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; }
+.widget-AdminSplitDateTime .datetimeshortcuts a[id^='calendarlink'] .date-icon, .widget-AdminSplitDateTime .datetimeshortcuts a[id^='calendarlink'] .clock-icon, .widget-AdminSplitDateTime .datetimeshortcuts a[id^='clocklink'] .date-icon, .widget-AdminSplitDateTime .datetimeshortcuts a[id^='clocklink'] .clock-icon, .widget-AdminDateWidget .datetimeshortcuts a[id^='calendarlink'] .date-icon, .widget-AdminDateWidget .datetimeshortcuts a[id^='calendarlink'] .clock-icon, .widget-AdminDateWidget .datetimeshortcuts a[id^='clocklink'] .date-icon, .widget-AdminDateWidget .datetimeshortcuts a[id^='clocklink'] .clock-icon, .widget-AdminTimeWidget .datetimeshortcuts a[id^='calendarlink'] .date-icon, .widget-AdminTimeWidget .datetimeshortcuts a[id^='calendarlink'] .clock-icon, .widget-AdminTimeWidget .datetimeshortcuts a[id^='clocklink'] .date-icon, .widget-AdminTimeWidget .datetimeshortcuts a[id^='clocklink'] .clock-icon { font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; }
 
 .widget-AdminSplitDateTime .datetimeshortcuts a[id^='calendarlink'] .date-icon:before, .widget-AdminSplitDateTime .datetimeshortcuts a[id^='clocklink'] .date-icon:before, .widget-AdminDateWidget .datetimeshortcuts a[id^='calendarlink'] .date-icon:before, .widget-AdminDateWidget .datetimeshortcuts a[id^='clocklink'] .date-icon:before, .widget-AdminTimeWidget .datetimeshortcuts a[id^='calendarlink'] .date-icon:before, .widget-AdminTimeWidget .datetimeshortcuts a[id^='clocklink'] .date-icon:before { content: ""; }
 
@@ -3110,7 +3110,7 @@ fieldset input[type=number], fieldset input[type=date], fieldset input.vIntegerF
 
 .calendarbox > div:first-child { border-top-left-radius: 0.25rem; border-top-right-radius: 0.25rem; background-color: #687086; overflow: auto; }
 
-.calendarbox > div:first-child a { display: block; text-align: center; padding: .3rem .2rem .3rem 1rem; position: relative; z-index: 2; color: transparent; font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; }
+.calendarbox > div:first-child a { display: block; text-align: center; padding: .3rem .2rem .3rem 1rem; position: relative; z-index: 2; color: transparent; font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; }
 
 .calendarbox > div:first-child a:hover { background-color: #464c5b; }
 
@@ -3290,7 +3290,7 @@ body.suit_layout_horizontal #content .content-wrap .messagelist { display: none;
 
 #result_list thead > tr th .sortoptions .sortremove:hover:before, .tabular table thead > tr th .sortoptions .sortremove:hover:before, table#change-history thead > tr th .sortoptions .sortremove:hover:before, #result_list thead > tr th .sortoptions .toggle:hover:before, .tabular table thead > tr th .sortoptions .toggle:hover:before, table#change-history thead > tr th .sortoptions .toggle:hover:before { color: #279bee; }
 
-#result_list thead > tr th .sortoptions .sortremove:before, .tabular table thead > tr th .sortoptions .sortremove:before, table#change-history thead > tr th .sortoptions .sortremove:before, #result_list thead > tr th .sortoptions .toggle:before, .tabular table thead > tr th .sortoptions .toggle:before, table#change-history thead > tr th .sortoptions .toggle:before { font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; }
+#result_list thead > tr th .sortoptions .sortremove:before, .tabular table thead > tr th .sortoptions .sortremove:before, table#change-history thead > tr th .sortoptions .sortremove:before, #result_list thead > tr th .sortoptions .toggle:before, .tabular table thead > tr th .sortoptions .toggle:before, table#change-history thead > tr th .sortoptions .toggle:before { font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; }
 
 #result_list thead > tr th .sortoptions .sortremove:before, .tabular table thead > tr th .sortoptions .sortremove:before, table#change-history thead > tr th .sortoptions .sortremove:before { content: ""; }
 
@@ -3597,7 +3597,7 @@ body.suit_layout_vertical #header .suit-user-tools .icon-link:hover { background
 
 body.suit_layout_vertical #header .suit-user-tools .icon-link:hover:after { opacity: 1; }
 
-body.suit_layout_vertical #header .suit-user-tools .icon-link:before { font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-size: 1.143rem; line-height: normal; display: inline-block; }
+body.suit_layout_vertical #header .suit-user-tools .icon-link:before { font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; font-size: 1.143rem; line-height: normal; display: inline-block; }
 
 body.suit_layout_vertical #header .suit-user-tools .icon-link:after { font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; display: block; position: absolute; content: attr(data-title); left: 0; top: 40px; font-size: 10px; white-space: nowrap; opacity: 0; transition: opacity .2s; }
 
@@ -3661,7 +3661,7 @@ body.suit_layout_vertical #suit-nav > ul > li a:hover, body.suit_layout_vertical
 
 body.suit_layout_vertical #suit-nav > ul > li.active { background-color: #252830; }
 
-body.suit_layout_vertical #suit-nav > ul > li.active:after { font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; color: #5d6478; position: absolute; right: 1rem; top: .85rem; font-size: 9px; }
+body.suit_layout_vertical #suit-nav > ul > li.active:after { font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; color: #5d6478; position: absolute; right: 1rem; top: .85rem; font-size: 9px; }
 
 body.suit_layout_vertical #suit-nav > ul > li.active.has-children:after { content: "\f078"; }
 
@@ -3736,11 +3736,11 @@ body.dashboard #content .content-wrap { display: -ms-flexbox; display: flex; }
 
 #content-main > .object-tools > li > a:not([class*="btn-"]) { display: inline-block; border-radius: 70px; }
 
-#content-main > .object-tools > li > a:not([class*="btn-"]):before { margin-right: 3px; display: inline-block; font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; content: none; }
+#content-main > .object-tools > li > a:not([class*="btn-"]):before { margin-right: 3px; display: inline-block; font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; content: none; }
 
 #content-main > .object-tools > li > a:not([class*="btn-"]).addlink { display: inline-block; border-radius: 70px; }
 
-#content-main > .object-tools > li > a:not([class*="btn-"]).addlink:before { margin-right: 3px; display: inline-block; font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; content: ""; }
+#content-main > .object-tools > li > a:not([class*="btn-"]).addlink:before { margin-right: 3px; display: inline-block; font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; content: ""; }
 
 #toolbar > .object-tools { list-style: none; margin: 0; padding: 0; position: relative; overflow: hidden; z-index: 6; }
 
@@ -3750,11 +3750,11 @@ body.dashboard #content .content-wrap { display: -ms-flexbox; display: flex; }
 
 #toolbar > .object-tools > li > a:not([class*="btn-"]) { display: inline-block; border-radius: 70px; }
 
-#toolbar > .object-tools > li > a:not([class*="btn-"]):before { margin-right: 3px; display: inline-block; font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; content: none; }
+#toolbar > .object-tools > li > a:not([class*="btn-"]):before { margin-right: 3px; display: inline-block; font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; content: none; }
 
 #toolbar > .object-tools > li > a:not([class*="btn-"]).addlink { display: inline-block; border-radius: 70px; }
 
-#toolbar > .object-tools > li > a:not([class*="btn-"]).addlink:before { margin-right: 3px; display: inline-block; font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; content: ""; }
+#toolbar > .object-tools > li > a:not([class*="btn-"]).addlink:before { margin-right: 3px; display: inline-block; font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; content: ""; }
 
 /* Sticky footer styles  */
 @media (min-width: 576px) { html { position: relative; min-height: 100%; }
@@ -3837,11 +3837,11 @@ body.dashboard #recent-actions-module ul.actionlist > li br { display: none; }
 
 body.dashboard #recent-actions-module ul.actionlist > li:before { min-width: 2rem; text-align: center; background-color: #fff; border-right: 1px solid #f1f1f1; position: absolute; padding-top: .4rem; top: 0; left: 0; height: 100%; }
 
-body.dashboard .addlink:before, body.dashboard .changelink:before, body.dashboard .deletelink:before { font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; display: block; float: left; min-width: 1.2rem; }
+body.dashboard .addlink:before, body.dashboard .changelink:before, body.dashboard .deletelink:before { font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; display: block; float: left; min-width: 1.2rem; }
 
 body.dashboard .addlink:before { content: ""; color: #4ACB68; }
 
-body.dashboard .changelink:before { content: ""; color: #F3C544; }
+body.dashboard .changelink:before { content: ""; color: #F3C544; }
 
 body.dashboard .deletelink:before { content: ""; color: #E04F3C; }
 
@@ -3863,11 +3863,11 @@ body.dashboard .deletelink:before { content: ""; color: #E04F3C; }
 
 #changelist #toolbar #changelist-search input[type='submit'] { display: inline-block; margin-right: 1rem; margin-bottom: 0.375rem; }
 
-#changelist #toolbar #changelist-search input[type='submit']:before { margin-right: 3px; display: inline-block; font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; content: ""; }
+#changelist #toolbar #changelist-search input[type='submit']:before { margin-right: 3px; display: inline-block; font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; content: ""; }
 
 #changelist #toolbar #changelist-search input[type='text'] { display: inline-block; width: auto; vertical-align: middle; margin-bottom: 0.375rem; }
 
-#changelist #toolbar #changelist-search input[type='text']:before { font-family: FontAwesome; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; content: ""; }
+#changelist #toolbar #changelist-search input[type='text']:before { font-family: 'Font Awesome 5 Free'; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; text-rendering: auto; font-weight: 900; content: ""; }
 
 #changelist #toolbar #changelist-search select { margin-bottom: 0.375rem; }
 
