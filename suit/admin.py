@@ -116,7 +116,7 @@ for app in settings.INSTALLED_APPS:
         module = import_module("%s.models" % app)
 
         if hasattr(module, 'STREAMBLOCKS_MODELS'):
-            STREAMBLOCKS_MODELS.append(*module.STREAMBLOCKS_MODELS)
+            STREAMBLOCKS_MODELS.extend(module.STREAMBLOCKS_MODELS)
     except ModuleNotFoundError as e:
         pass
 
