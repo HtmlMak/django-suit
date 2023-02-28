@@ -201,7 +201,8 @@
                                 // prepare to remove from db
                                 this.will_removed.push({
                                     model_name: block.model_name,
-                                    id: instance_id
+                                    id: instance_id,
+                                    app: block.app
                                 });
                             }
                         }
